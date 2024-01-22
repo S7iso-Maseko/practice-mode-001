@@ -1,7 +1,8 @@
 import express from "express"
 import connectToDB from "./db";
 import userRoutes from "./routes/user.routes";
-import categoryRoutes from "./routes/category.route";
+import categoryRoutes from "./routes/category.routes";
+import taskRoutes from "./routes/task.routes";
 
 const app = express();
 
@@ -11,9 +12,11 @@ const PORT = 1337;
 
 connectToDB();
 
-app.use("/user", userRoutes);
+app.use("/users", userRoutes);
 
-app.use("/category", categoryRoutes);
+app.use("/categories", categoryRoutes);
+
+app.use("/tasks", taskRoutes);
 
 app.listen(PORT, () => {
     console.log("Server up and Running...")
