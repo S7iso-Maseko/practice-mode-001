@@ -41,11 +41,11 @@ export const deleteCategory = async (req: AuthRequest, res: Response) => {
 
         const { id } = req.params;
         await Category.deleteMany({ _id: id });
-        res.send({ message: " Category deleted" });
+        res.send({ message: "Category deleted" });
 
     } catch (error) {
         console.log("error in deleteCategory", error);
-        res.send({ error: "Something went wrong" });
+        res.send({ error: "Error while deleting category" });
         throw error;
     }
 }

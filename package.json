@@ -4,7 +4,7 @@
   "description": "A simple todo app.",
   "main": "server.ts",
   "scripts": {
-    "start": "ts-node ./src/server.ts && node ./dist/server.js"
+    "start": "ts-node ./backend/src/server.ts && node ./dist/server.js"
   },
   "author": "sfiso.m",
   "license": "MIT",
