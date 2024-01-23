@@ -1,10 +1,11 @@
+import { Box } from "@/utils/theme";
 import { StyleSheet, Text, View, StatusBar } from "react-native";
 
 const Button = () => {
   return (
-    <View>
+    <Box bg="blu200" p="4" borderRadius="rounded-3xl">
       <Text>Button Components</Text>
-    </View>
+    </Box>
   );
 }
 
