@@ -23,7 +23,7 @@ const theme = createTheme({
         "rounded-5xl": 20,
         "rounded-7xl": 28
     },
-    textVariants
+    textVariants,
 });
 
 export type Theme = typeof theme;
